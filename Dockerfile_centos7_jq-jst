@@ -1,0 +1,5 @@
+FROM centos:latest
+
+RUN yum install -y epel-release && \
+    yum install -y jq && \
+    /bin/cp -f /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
